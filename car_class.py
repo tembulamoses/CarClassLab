@@ -4,3 +4,12 @@ class Car(object):
 		self.speed = 0
 		self.model = model
 		self.vehicle_type = vehicle_type
+
+		if self.name in ['Porshe', 'Koenigsegg']:
+			self.num_of_doors = 2
+		else:
+			self.num_of_doors = 4
+		if self.vehicle_type == 'trailer':
+			self.num_of_wheels = 8
+		else:
+			self.num_of_wheels = 4
